@@ -3,30 +3,8 @@
 
 ## 1. ER Diagram
 
+![IMovies Entity Relationship Diagram](IMovies-ER-Diagram.png)
 
-    erDiagram
-    USER ||--o{ BOOKING : makes
-
-    USER {
-        string _id PK
-        string name
-        string email
-        string password
-    }
-
-    BOOKING {
-        string _id PK
-        string user FK
-        string movieId
-        string movieTitle
-        string showDate
-        string showTime
-        string seats
-        float totalAmount
-        string bookingReference
-        datetime createdAt
-        datetime updatedAt
-    }
 
 ## 2. Entities and Attributes
 
