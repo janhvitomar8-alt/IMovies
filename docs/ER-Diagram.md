@@ -3,31 +3,30 @@
 
 ## 1. ER Diagram
 
-```mermaid
-erDiagram
+
+    erDiagram
     USER ||--o{ BOOKING : makes
 
     USER {
-        ObjectId _id PK
+        string _id PK
         string name
         string email
         string password
     }
 
     BOOKING {
-        ObjectId _id PK
-        ObjectId user FK
+        string _id PK
+        string user FK
         string movieId
         string movieTitle
         string showDate
         string showTime
-        array seats
-        number totalAmount
+        string seats
+        float totalAmount
         string bookingReference
         datetime createdAt
         datetime updatedAt
     }
-```
 
 ## 2. Entities and Attributes
 
